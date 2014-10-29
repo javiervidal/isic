@@ -1,6 +1,6 @@
 # Isic
 
-TODO: Write a gem description
+The International Standard Industrial Classification (ISIC) is a United Nations system for classifying economic data.
 
 ## Installation
 
@@ -18,7 +18,6 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
 
 ## Contributing
 
