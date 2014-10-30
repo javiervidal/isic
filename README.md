@@ -24,9 +24,10 @@ Or install it yourself as:
 
 Given an ISIC code, find its place in the hierarchy:
 
-    $ i = Isic.new("0891")
+    $ i = Isic::Entity.new("0891")
     $ i.classify
-    { :section => { :code => "A", :description => "Agriculture, forestry and fishing" },
+    {
+      :section => { :code => "A", :description => "Agriculture, forestry and fishing" },
       :division => { :code => "08", :description => "Other mining and quarrying" },
       :group => { :code => "089", :description => "Mining and quarrying n.e.c." },
       :class => { :code => "0891", :description => "Mining of chemical and fertilizer minerals" }
