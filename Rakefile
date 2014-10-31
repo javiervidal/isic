@@ -1,6 +1,10 @@
 require "bundler/gem_tasks"
 
 task :console do
-  exec "irb -r isic -I ./lib"
+  require "awesome_print"
+  require "irb"
+  require "irb/completion"
+  require "isic"
+  ARGV.clear
+  IRB.start
 end
-
