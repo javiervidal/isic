@@ -43,6 +43,15 @@ module Isic
       end
     end
 
+    def groups(options)
+      if options[:division]
+        code = "#{options[:division]}\\d"
+        find_entities_by_code(code)
+      else
+        []
+      end
+    end
+
     private
 
     def find_entities_by_code(code)
