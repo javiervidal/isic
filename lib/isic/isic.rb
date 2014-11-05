@@ -25,51 +25,35 @@ module Isic
 
   class << self
 
-    def sections
-      s = []
-      File.open('files/ISIC_Rev_4_english_structure.txt').each do |line|
-        md = /"([A-Z])","(.+)"/.match(line)
-        s << { code: md[1], description: md[2] } if md
-      end
-      s
+    def sections(translation: :en)
+      Search.new('[A-Z]', translation: translation).all
     end
 
-    def divisions(options)
+    def divisions(options, translation: :en)
       if options[:section] && DIVISIONS.keys.include?(options[:section])
         code = DIVISIONS[options[:section]].join('|')
-        find_entities_by_code(code)
+        Search.new(code, translation: translation).all
       else
         []
       end
     end
 
-    def groups(options)
+    def groups(options, translation: :en)
       if options[:division] && /\d{2}/.match(options[:division])
         code = "#{options[:division]}\\d"
-        find_entities_by_code(code)
+        Search.new(code, translation: translation).all
       else
         []
       end
     end
 
-    def classes(options)
+    def classes(options, translation: :en)
       if options[:group] && /\d{3}/.match(options[:group])
         code = "#{options[:group]}\\d"
-        find_entities_by_code(code)
+        Search.new(code, translation: translation).all
       else
         []
       end
-    end
-
-    private
-
-    def find_entities_by_code(code)
-      entities = []
-      File.open('files/ISIC_Rev_4_english_structure.txt').each do |line|
-        md = /"(#{code})","(.+)"/.match(line)
-        entities << { code: md[1], description: md[2] } if md
-      end
-      entities
     end
 
   end
