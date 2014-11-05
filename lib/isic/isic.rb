@@ -44,8 +44,17 @@ module Isic
     end
 
     def groups(options)
-      if options[:division]
+      if options[:division] && /\d{2}/.match(options[:division])
         code = "#{options[:division]}\\d"
+        find_entities_by_code(code)
+      else
+        []
+      end
+    end
+
+    def classes(options)
+      if options[:group] && /\d{3}/.match(options[:group])
+        code = "#{options[:group]}\\d"
         find_entities_by_code(code)
       else
         []

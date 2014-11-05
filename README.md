@@ -47,7 +47,7 @@ Find all the groups of the "08" division:
 
 Find all the classes of the "089" group:
 
-    $ Isic.groups(division: "089")
+    $ Isic.classes(group: "089")
 
 ## Contributing
 
