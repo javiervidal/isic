@@ -2,7 +2,7 @@ require 'spec_helper'
 
 module Isic
 
-  describe 'Isic.sections' do
+  describe 'Isic methods' do
 
     context 'when english' do
 
