@@ -25,11 +25,13 @@ module Isic
 
   class << self
 
-    def sections(translation: :en)
+    def sections(options = {})
+      translation = options[:translation] || :en
       Search.new('[A-Z]', translation: translation).all
     end
 
-    def divisions(options, translation: :en)
+    def divisions(options = {})
+      translation = options[:translation] || :en
       if options[:section] && DIVISIONS.keys.include?(options[:section])
         code = DIVISIONS[options[:section]].join('|')
         Search.new(code, translation: translation).all
@@ -38,7 +40,8 @@ module Isic
       end
     end
 
-    def groups(options, translation: :en)
+    def groups(options = {})
+      translation = options[:translation] || :en
       if options[:division] && /\d{2}/.match(options[:division])
         code = "#{options[:division]}\\d"
         Search.new(code, translation: translation).all
@@ -47,7 +50,8 @@ module Isic
       end
     end
 
-    def classes(options, translation: :en)
+    def classes(options = {})
+      translation = options[:translation] || :en
       if options[:group] && /\d{3}/.match(options[:group])
         code = "#{options[:group]}\\d"
         Search.new(code, translation: translation).all

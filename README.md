@@ -87,6 +87,25 @@ Find all the classes of the "089" group:
       {:code=>"0899", :description=>"Other mining and quarrying n.e.c."}
     ]
 
+## Translations
+
+Descriptions are returned in English by default, but Spanish and French are supported. In any of the methods above you can specify the translation:
+
+    > Isic::Entity.new("0891").classify(translation: :es)
+    {
+      :class=>{:code=>"0891", :description=>"Extracción de minerales para la fabricación de abonos y productos químicos"},
+      :group=>{:code=>"089", :description=>"Explotación de minas y canteras n.c.p."},
+      :division=>{:code=>"08", :description=>"Explotación de otras minas y canteras"},
+      :section=>{:code=>"B", :description=>"Explotación de minas y canteras"}
+    }
+
+    > Isic.groups(division: "08", translation: :fr)
+    [
+      {:code=>"081", :description=>"Extraction de pierres, de sables et d'argiles"},
+      {:code=>"089", :description=>"Activités extractives, n.c.a."}
+    ]
+
+
 ## Contributing
 
 1. Fork it ( http://github.com/javiervidal/isic/fork )

@@ -5,9 +5,10 @@ module Isic
       @code = code
     end
 
-    def classify
+    def classify(options = {})
+      translation = options[:translation] || :en
       all_codes.inject({}) do |hash, (key, value)|
-        hash[key] = Isic::Search.new(value).first
+        hash[key] = Isic::Search.new(value, translation: translation).first
         hash
       end
     end
