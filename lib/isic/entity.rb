@@ -20,11 +20,11 @@ module Isic
         when /\d{4}/
           {class: @code, group: @code[0..2], division: @code[0..1], section: section(@code[0..1])}
         when /\d{3}/
-          [group: @code, division: @code[0..1], section: section(@code[0..1])]
+          {group: @code, division: @code[0..1], section: section(@code[0..1])}
         when /\d{2}/
-          [division: @code, section: section(@code)]
+          {division: @code, section: section(@code)}
         when /[A-Z]/
-          [section: @code]
+          {section: @code}
       end
     end
 

@@ -29,6 +29,26 @@ module Isic
 
     end
 
+    context 'when no specifying the parent entity' do
+
+      let(:divisions) { Isic.divisions }
+      let(:groups) { Isic.groups }
+      let(:classes) { Isic.classes }
+
+      it 'returns no divisions' do
+        expect(divisions).to match_array([])
+      end
+
+      it 'returns no groups' do
+        expect(groups).to match_array([])
+      end
+
+      it 'returns no classes' do
+        expect(classes).to match_array([])
+      end
+
+    end
+
     context 'when spanish' do
 
       let(:sections) { Isic.sections(translation: :es) }
