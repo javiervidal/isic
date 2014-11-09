@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Isic::VERSION
   spec.authors       = ["Javier Vidal"]
   spec.email         = ["javier@javiervidal.net"]
-  spec.summary       = %q{International Standard Industrial Classification}
-  spec.description   = %q{International Standard Industrial Classification}
+  spec.summary       = 'International Standard Industrial Classification'
+  spec.description   = 'The International Standard Industrial Classification (ISIC) is a United Nations system for classifying economic data. The classification is based in four hierarchical levels: sections, divisions, groups and classes. This gem allows to classify an entity based on its ISIC code.'
   spec.homepage      = "https://github.com/javiervidal/isic"
   spec.license       = "MIT"
 
