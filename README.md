@@ -116,7 +116,7 @@ Descriptions are returned in English by default, but Spanish and French are supp
 
 ## Copyright
 
-Copyright (c) 2014–ω Javier Vidal
+Copyright (c) 2014 – ∞ Javier Vidal
 
 ## License
 
