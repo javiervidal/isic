@@ -113,3 +113,11 @@ Descriptions are returned in English by default, but Spanish and French are supp
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Copyright
+
+Copyright (c) 2014–ω Javier Vidal
+
+## License
+
+This gem is released under the [MIT License](http://opensource.org/licenses/MIT).
