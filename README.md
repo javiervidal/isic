@@ -114,6 +114,10 @@ Descriptions are returned in English by default, but Spanish and French are supp
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
+## Code Status
+
+[![Code Climate](https://codeclimate.com/github/javiervidal/isic/badges/gpa.svg)](https://codeclimate.com/github/javiervidal/isic)
+
 ## Copyright
 
 Copyright (c) 2014 – ∞ Javier Vidal
