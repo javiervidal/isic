@@ -116,6 +116,7 @@ Descriptions are returned in English by default, but Spanish and French are supp
 
 ## Code Status
 
+[![Build Status](https://travis-ci.org/javiervidal/isic.svg?branch=master)](https://travis-ci.org/javiervidal/isic)
 [![Code Climate](https://codeclimate.com/github/javiervidal/isic/badges/gpa.svg)](https://codeclimate.com/github/javiervidal/isic)
 
 ## Copyright
