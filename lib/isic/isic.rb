@@ -41,19 +41,17 @@ class Isic
     end
 
     def groups(options = {})
-      translation = options[:translation] || :en
-      if options[:division] && /\d{2}/.match(options[:division])
-        code = "#{options[:division]}\\d"
-        Search.new(code, translation: translation).all
-      else
-        []
-      end
+      parse(:division, 2, options)
     end
 
     def classes(options = {})
+      parse(:group, 3, options)
+    end
+
+    def parse(symbol, digits, options = {})
       translation = options[:translation] || :en
-      if options[:group] && /\d{3}/.match(options[:group])
-        code = "#{options[:group]}\\d"
+      if options[symbol] && Regexp.new("\\d{#{digits}}").match(options[symbol])
+        code = "#{options[symbol]}\\d"
         Search.new(code, translation: translation).all
       else
         []
@@ -61,5 +59,7 @@ class Isic
     end
 
   end
+
+  private_class_method :parse
 
 end
