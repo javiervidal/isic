@@ -1,4 +1,4 @@
-module Isic
+class Isic
 
   DIVISIONS = {}
   DIVISIONS['A'] = %w( 01 02 03 )

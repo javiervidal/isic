@@ -1,4 +1,4 @@
-module Isic
+class Isic
   class Entity
 
     def initialize(code)

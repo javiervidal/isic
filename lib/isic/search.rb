@@ -1,4 +1,4 @@
-module Isic
+class Isic
   class Search
 
     FILES = {
