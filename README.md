@@ -129,7 +129,9 @@ Descriptions are returned in English by default, but Spanish and French are supp
 
 ## Code Status
 
+[![Gem Version](https://badge.fury.io/rb/isic.svg)](http://badge.fury.io/rb/isic)
 [![Build Status](https://travis-ci.org/javiervidal/isic.svg?branch=master)](https://travis-ci.org/javiervidal/isic)
+[![Coverage Status](https://coveralls.io/repos/javiervidal/isic/badge.png?branch=master)](https://coveralls.io/r/javiervidal/isic?branch=master)
 [![Code Climate](https://codeclimate.com/github/javiervidal/isic/badges/gpa.svg)](https://codeclimate.com/github/javiervidal/isic)
 
 ## Copyright
