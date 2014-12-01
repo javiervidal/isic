@@ -129,7 +129,7 @@ Descriptions are returned in English by default, but Spanish and French are supp
 
 ## Code Status
 
-[![Gem Version](http://img.shields.io/badge/gem-v1.0.1-blue.svg)](https://rubygems.org/gems/mic)
+[![Gem Version](http://img.shields.io/badge/gem-v1.0.3-blue.svg)](https://rubygems.org/gems/mic)
 [![Build Status](https://travis-ci.org/javiervidal/isic.svg?branch=master)](https://travis-ci.org/javiervidal/isic)
 [![Coverage Status](https://coveralls.io/repos/javiervidal/isic/badge.png?branch=master)](https://coveralls.io/r/javiervidal/isic?branch=master)
 [![Code Climate](https://codeclimate.com/github/javiervidal/isic/badges/gpa.svg)](https://codeclimate.com/github/javiervidal/isic)
