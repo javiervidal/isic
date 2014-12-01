@@ -5,6 +5,8 @@ SimpleCov.formatters = [SimpleCov::Formatter::HTMLFormatter, Coveralls::SimpleCo
 
 SimpleCov.start
 
+require 'isic'
+
 RSpec.configure do |config|
 
   config.expect_with :rspec do |expectations|
