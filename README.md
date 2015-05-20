@@ -118,6 +118,17 @@ Descriptions are returned in English by default, but Spanish and French are supp
   {:code=>"089", :description=>"Activités extractives, n.c.a."}
 ]
 ```
+## How to Launch the Console
+
+    $ rake console
+
+## How to Run the Test Suite
+
+    $ rspec
+
+## Changelog
+
+[Changelog](https://github.com/javiervidal/isic/blob/master/CHANGELOG.md)
 
 ## Contributing
 
@@ -129,7 +140,7 @@ Descriptions are returned in English by default, but Spanish and French are supp
 
 ## Code Status
 
-[![Gem Version](http://img.shields.io/badge/gem-v1.0.3-blue.svg)](https://rubygems.org/gems/mic)
+[![Gem Version](http://img.shields.io/badge/gem-v1.0.4-blue.svg)](https://rubygems.org/gems/mic)
 [![Build Status](https://travis-ci.org/javiervidal/isic.svg?branch=master)](https://travis-ci.org/javiervidal/isic)
 [![Coverage Status](https://coveralls.io/repos/javiervidal/isic/badge.png?branch=master)](https://coveralls.io/r/javiervidal/isic?branch=master)
 [![Code Climate](https://codeclimate.com/github/javiervidal/isic/badges/gpa.svg)](https://codeclimate.com/github/javiervidal/isic)
