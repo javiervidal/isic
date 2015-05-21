@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.0.4] - 2015-05-20
+## [1.0.5] - 2015-05-21
 
 ### Added
 - This CHANGELOG.md file
